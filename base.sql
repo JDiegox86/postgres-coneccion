@@ -3,20 +3,20 @@ create table usuario(
 	nombre VARCHAR(30),
 	apellido VARCHAR(30),
 	fecha_de_nacimiento DATE,
-	correo VARCHAR(35)
-	contraseña VARCHAR(35)
+	correo VARCHAR(35),
+	contrasena VARCHAR(35)
 );
 
 create table administrador(
 	id_administrador INT primary key,
 	usuario VARCHAR(15),
-	contraseña VARCHAR(15),
+	contrasena VARCHAR(15)
 );
 
 create table clinica(
 	id_clinica INT primary key,
 	nombre VARCHAR(60),
-	ubicacion VARCHAR(60),
+	ubicacion VARCHAR(60)
 );
 
 create table especialidad (
@@ -46,5 +46,5 @@ create table cita (
 	num_atencion INT,
 	foreign key (dni) references usuario(dni),
 	foreign key (id_clinica) references clinica(id_clinica),
-	foreign key (id_doctor) refences doctor(id_doctor)
+	foreign key (id_doctor) references doctor(id_doctor)
 );
