@@ -13,6 +13,13 @@ create table administrador(
 	contrasena VARCHAR(15)
 );
 
+create table desarrollador(
+	id_desarrollador INT primary key,
+	usuario VARCHAR(15),
+	contrasenia VARCHAR(15)
+	codseguridad VARCHAR(10)
+);
+
 create table clinica(
 	id_clinica INT primary key,
 	nombre VARCHAR(60),
