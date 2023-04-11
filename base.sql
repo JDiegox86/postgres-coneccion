@@ -41,10 +41,12 @@ create table cita (
 	id_cita INT primary key,
 	dni INT,
 	id_clinica INT,
+	id_especialidad INT,
 	id_doctor INT,
 	fecha_hora TIMESTAMP,
 	num_atencion INT,
 	foreign key (dni) references usuario(dni),
 	foreign key (id_clinica) references clinica(id_clinica),
+	foreign key (id_especialidad) references especialidad(id_especialidad),
 	foreign key (id_doctor) references doctor(id_doctor)
 );
