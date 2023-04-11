@@ -16,7 +16,7 @@ create table administrador(
 create table desarrollador(
 	id_desarrollador INT primary key,
 	usuario VARCHAR(15),
-	contrasenia VARCHAR(15)
+	contrasenia VARCHAR(15),
 	codseguridad VARCHAR(10)
 );
 
